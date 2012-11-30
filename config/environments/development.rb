@@ -34,9 +34,6 @@ Omrails::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-  
-  # My attempt to add host information
-  config.action_mailer.default_url_options = { :host => 'shielded-bayou-3706.herokuapp.com/' }
 
   # My attempt to add seeting for Heroku
   config.assets.initialize_on_precompile = false
