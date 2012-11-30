@@ -20,6 +20,12 @@ Omrails::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # My attempt to add seeting for Heroku
+  config.assets.initialize_on_precompile = false
+  
+  # My attempt to add proper host setting
+  config.action_mailer.default_url_options = { :host => 'shielded-bayou-3706.herokuapp.com/' }
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
