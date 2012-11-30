@@ -24,7 +24,7 @@ Omrails::Application.configure do
   config.assets.initialize_on_precompile = false
   
   # My attempt to add proper host setting
-  config.action_mailer.default_url_options = { :host => 'shielded-bayou-3706.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => ENV['MAILER_URL'] }
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
