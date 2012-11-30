@@ -20,8 +20,6 @@ Omrails::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  # My attempt to add seeting for Heroku
-  config.assets.initialize_on_precompile = false
   
   # My attempt to add proper host setting
   config.action_mailer.default_url_options = { :host => ENV['MAILER_URL'] }
